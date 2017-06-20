@@ -1,0 +1,34 @@
+1.  Learn Spring Boot (MVC) in 50 Minutes
+
+
+In this tutorial I show how to build a N tier architecture application featuring 3 layers where : 
+
+Layer 1 - Controller for handling https request REST API. (GET, POST, PUT, DELETE).
+
+Layer 2 - Service for business logic.
+
+Layer 3 - Data access for retrieving data from a database of your choice.
+
+I show how to use Spring dependency injection using @Autowired and @Qualifier.
+
+In this tutorial I show how to implement to an interface to enable you develop loosely coupled system that changes to your code require just one line of code to change the behaviour of your application. (DAO Pattern).
+
+Finally I show how easy it is to run your application from a jar file where this can be deployed to you favourite application server.
+
+If you are a Java developer or learning Java this is one the frameworks that you need to familiarize with. It is super awesome.
+
+Source Code available at : https://github.com/djdjalas/SpringBootIn50
+
+Follow me on my blog:
+https://medium.com/@iamdjalas/if-you-...
+
+Enjoy ? Part 2 Now Available at: https://www.youtube.com/watch?v=ZA9WpK-lxXM&t=3192s
+
+Useful links:
+Building an Application with Spring Boot - https://spring.io/guides/gs/spring-boot/
+
+Spring Boot Reference Guide - http://docs.spring.io/spring-boot/doc...
+
+Spring Framework Reference Documentation - http://docs.spring.io/spring/docs/cur...
+
+Please don't forget to subscribe.
