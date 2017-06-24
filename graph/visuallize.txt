@@ -1,4 +1,4 @@
-话题一： 布局（Layout）
+话题一： 图布局（Graph Layout ->   information visualization）
 
 1. 概览
 
@@ -17,6 +17,7 @@
 1.2 添加节点（search around）
 围绕中心节点的布局
 
+
 1.3 鼠标拖拽
 
 
@@ -27,21 +28,40 @@
 如何利用边?
 
 
+数据建模
 
-2. 算法定义
+点
+
+边
+有向/无向
+
+
+
+2. 图布局算法
+Hierarchical graph visualization functionality 
 
 2.1 输入数据描述
+root nodes
+nodes_v1
+edges_v1
+
 2.2 输出数据描述
+nodes_v2
+edges_v1
+
+分层布局算法
+第一层节点坐标
+
+第二层节点坐标
+
+第三层节点坐标
+...
+
+第n层节点
+
 
 局部选中的自动布局
 obj1.property1 =（obj2.property2 * multiplier）+ constant value
-
-分层布局
-multi tree
-谁在第一层？
-根据第一层找第二层，依次类推
-
-
 
 3. 布局存储
 
@@ -58,6 +78,13 @@ AutoLayout 的核心原理：
      > view的布局位置，确定于它与superview及其他view的关系。 
      > 与传统的autoresizingmask自适应相比，AutoLayout更精确，能绝对的确定view的布局。
      > view不一定需要一个初始的rect。AutoLayout中，view如果有足够的constraint，便可以确定自己的尺寸和位置，并且知道自己和其他view的关系。即，想确定view的布局，就给它（们）添加constraint。
+
+
+Sugiyam Hierarchical Layout
+All Pairs Shortest Path
+Spring Embedded Layout
+
+
 
 话题二： 
 自动调整尺寸 （autoresizing）
