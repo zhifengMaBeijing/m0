@@ -1,3 +1,8 @@
+spring make web application easier.
+
+overview of spring?
+
+
 1.  Learn Spring Boot (MVC) in 50 Minutes
 
 
@@ -32,3 +37,20 @@ Spring Boot Reference Guide - http://docs.spring.io/spring-boot/doc...
 Spring Framework Reference Documentation - http://docs.spring.io/spring/docs/cur...
 
 Please don't forget to subscribe.
+
+
+
+2. caching with spring: advaced topics and best practice
+
+what to cache?  cache read operations
+where to cache? different layer (database itself, access layer, business layer, http cache)
+which cache product to use?
+local vs distributed?
+
+
+
+cache does not provide security
+
+
+
+https://www.youtube.com/watch?v=3NLS7147UQo
