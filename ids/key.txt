@@ -1,0 +1,23 @@
+Admin user password for W2K2008 reut4dm!n
+
+vmwork station : 6R9TB-6BWFP-XRD2G-FR9M2-K4W87
+
+Windows Server 2008 R2 Standard and Enterprise GBH4Q-4XQGF-8P3VX-WM434-4WX8W
+Windows Server 2003 R2 Enterprise Edition      G8FXF-PTMCB-W7QY2-6PCFF-8P4X6
+
+
+Windows Server 2003 Standard x64 Edition:RGHDY-8PCH7-V8GWH-BP8MM-7RWPD
+
+
+/Od /D "_MBCS" /Gm /EHsc /RTC1 /MDd /Fo"Debug\\" /Fd"Debug\vc80.pdb" /W3 /nologo /c /Wp64 /ZI /TP /errorReport:prompt
+
+2008 : IE_default proxy: http://wtd.amers.ime.reuters.com/proxy.pac
+2008 : changed to IE_default proxy: http://wtd.apac.ime.reuters.com/proxy.pac
+
+2003 64 bits : Reuters123
+
+
+Visio Professional 2003 (Office 2003 Applications)  Key = BDPWF-VV8TT-PG2HM-Q8DMW-RHV3Y
+
+
+
