@@ -1,6 +1,8 @@
 spring make web application easier.
 
-overview of spring?
+overview of spring architecture?
+JPA: java persistence API
+map relation database to object, operate on object.
 
 
 1.  Learn Spring Boot (MVC) in 50 Minutes
@@ -54,3 +56,18 @@ cache does not provide security
 
 
 https://www.youtube.com/watch?v=3NLS7147UQo
+
+
+3 with mysql
+
+https://springframework.guru/configuring-spring-boot-for-mysql/
+it mentioned h2 is configured by spring boot by default.
+
+  JPA : Hibernate
+  http://www.h2database.com/html/main.html
+why JPA?
+any other alternatives? mybatis
+
+the following example could be used to refactor neo4j JDBC api
+
+http://www.tutorialspoint.com/spring/spring_jdbc_example.htm
