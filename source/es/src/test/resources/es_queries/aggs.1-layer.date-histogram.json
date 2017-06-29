@@ -1,0 +1,16 @@
+{
+  "aggs": {
+    "sales": {
+      "date_histogram": {
+        "field": "sold",
+        "interval": "month",
+        "format":"yyyy-MM-dd",
+        "min_doc_count" : 0,
+        "extended_bounds" : {
+          "min" : "2014-01-01",
+          "max" : "2015-01-31"
+        }
+      }
+    }
+  }
+}

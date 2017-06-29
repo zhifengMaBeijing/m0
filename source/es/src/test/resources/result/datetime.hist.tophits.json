@@ -1,0 +1,60 @@
+
+
+
+{
+  "size": 0,
+  "query" : {
+    "ids" : {
+      "type" : [ ],
+      "values" : [
+        "AVyfaoNddZyJEjcQ1aiF",
+        "AVyfaoNddZyJEjcQ1aiB",
+        "AVyfaoNddZyJEjcQ1aiC"
+      ],
+      "boost" : 1.0
+    }
+  },
+  "_source" : false,
+  "aggregations" : {
+    "agg" : {
+      "date_histogram" : {
+        "field" : "sold",
+        "format" : "yyyy-MM-dd",
+        "interval" : "1M",
+        "offset" : 0,
+        "order" : {
+          "_key" : "asc"
+        },
+        "keyed" : false,
+        "min_doc_count" : 1
+      },
+      "aggregations" : {
+        "agg" : {
+          "terms" : {
+            "field" : "color.keyword",
+            "size" : 10,
+            "min_doc_count" : 0,
+            "shard_min_doc_count" : 0,
+            "show_term_doc_count_error" : false,
+            "order" : [
+              {
+                "_count" : "desc"
+              },
+              {
+                "_term" : "asc"
+              }
+            ]
+          },
+          "aggregations": {
+            "top": {
+              "top_hits": {
+                "size": 1000,
+                "_source": false
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

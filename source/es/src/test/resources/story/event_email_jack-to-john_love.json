@@ -1,0 +1,11 @@
+{
+  "doc_index": "ontology_1",
+  "doc_type": "event",
+  "doc_id": "eid__100",
+  "e_name": "send email",
+  "from": "jack",
+  "to": "john",
+  "when": "2017-06-09",
+  "title": "love",
+  "body": "a long story"
+}

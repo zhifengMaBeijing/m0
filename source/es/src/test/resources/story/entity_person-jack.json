@@ -1,0 +1,12 @@
+{
+  "doc_index": "ontology_1",
+  "doc_type": "person",
+  "doc_id": "pid_100",
+  "name": "jack",
+  "age": 10,
+  "gender": "boy",
+  "location": "beijing,china",
+  "hobby": "visit website,play games",
+  "employer": "netease",
+  "married": false
+}

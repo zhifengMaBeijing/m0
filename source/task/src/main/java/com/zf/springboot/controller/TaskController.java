@@ -21,15 +21,10 @@ public class TaskController {
         return null;
     }
 
-    /**
-     * save task data
-     */
-    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    @RequestMapping(value = "/save.jsom", method = RequestMethod.POST)
     public JSONPObject save(String userId, String taskName, @RequestBody String data) {
-
         return null;
     }
-
     /**
      * load task data
      * note: task id should be unique

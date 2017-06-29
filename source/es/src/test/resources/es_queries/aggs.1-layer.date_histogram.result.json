@@ -1,0 +1,170 @@
+{
+  "took": 3,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 7,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "cars",
+        "_type": "transactions",
+        "_id": "AVyfaoNddZyJEjcQ1aiB",
+        "_score": 1,
+        "_source": {
+          "price": 10000,
+          "color": "red",
+          "make": "honda",
+          "sold": "2014-10-28"
+        }
+      },
+      {
+        "_index": "cars",
+        "_type": "transactions",
+        "_id": "AVyfaoNddZyJEjcQ1aiF",
+        "_score": 1,
+        "_source": {
+          "price": 12000,
+          "color": "green",
+          "make": "toyota",
+          "sold": "2014-08-19"
+        }
+      },
+      {
+        "_index": "cars",
+        "_type": "transactions",
+        "_id": "AVyfaoNddZyJEjcQ1aiC",
+        "_score": 1,
+        "_source": {
+          "price": 20000,
+          "color": "red",
+          "make": "honda",
+          "sold": "2014-11-05"
+        }
+      },
+      {
+        "_index": "cars",
+        "_type": "transactions",
+        "_id": "AVyfaoNddZyJEjcQ1aiD",
+        "_score": 1,
+        "_source": {
+          "price": 30000,
+          "color": "green",
+          "make": "ford",
+          "sold": "2014-05-18"
+        }
+      },
+      {
+        "_index": "cars",
+        "_type": "transactions",
+        "_id": "AVyfaoNddZyJEjcQ1aiG",
+        "_score": 1,
+        "_source": {
+          "price": 20000,
+          "color": "red",
+          "make": "honda",
+          "sold": "2014-11-05"
+        }
+      },
+      {
+        "_index": "cars",
+        "_type": "transactions",
+        "_id": "AVyfaoNddZyJEjcQ1aiH",
+        "_score": 1,
+        "_source": {
+          "price": 80000,
+          "color": "red",
+          "make": "bmw",
+          "sold": "2014-01-01"
+        }
+      },
+      {
+        "_index": "cars",
+        "_type": "transactions",
+        "_id": "AVyfaoNddZyJEjcQ1aiE",
+        "_score": 1,
+        "_source": {
+          "price": 15000,
+          "color": "blue",
+          "make": "toyota",
+          "sold": "2014-07-02"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "sales": {
+      "buckets": [
+        {
+          "key_as_string": "2014-01-01",
+          "key": 1388534400000,
+          "doc_count": 1
+        },
+        {
+          "key_as_string": "2014-02-01",
+          "key": 1391212800000,
+          "doc_count": 0
+        },
+        {
+          "key_as_string": "2014-03-01",
+          "key": 1393632000000,
+          "doc_count": 0
+        },
+        {
+          "key_as_string": "2014-04-01",
+          "key": 1396310400000,
+          "doc_count": 0
+        },
+        {
+          "key_as_string": "2014-05-01",
+          "key": 1398902400000,
+          "doc_count": 1
+        },
+        {
+          "key_as_string": "2014-06-01",
+          "key": 1401580800000,
+          "doc_count": 0
+        },
+        {
+          "key_as_string": "2014-07-01",
+          "key": 1404172800000,
+          "doc_count": 1
+        },
+        {
+          "key_as_string": "2014-08-01",
+          "key": 1406851200000,
+          "doc_count": 1
+        },
+        {
+          "key_as_string": "2014-09-01",
+          "key": 1409529600000,
+          "doc_count": 0
+        },
+        {
+          "key_as_string": "2014-10-01",
+          "key": 1412121600000,
+          "doc_count": 1
+        },
+        {
+          "key_as_string": "2014-11-01",
+          "key": 1414800000000,
+          "doc_count": 2
+        },
+        {
+          "key_as_string": "2014-12-01",
+          "key": 1417392000000,
+          "doc_count": 0
+        },
+        {
+          "key_as_string": "2015-01-01",
+          "key": 1420070400000,
+          "doc_count": 0
+        }
+      ]
+    }
+  }
+}

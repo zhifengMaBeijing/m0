@@ -1,0 +1,16 @@
+{
+  "aggs": {
+    "colors": {
+      "terms": {
+        "field": "color.keyword"
+      },
+      "aggs":{
+        "make": {
+          "terms": {
+            "field": "make.keyword"
+          }
+        }
+      }
+    }
+  }
+}

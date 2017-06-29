@@ -1,0 +1,23 @@
+[
+  {
+    "datetime": "2014-08-01",
+    "metric": {
+      "all": 1,
+      "green": 1
+    }
+  },
+  {
+    "datetime": "2014-10-01",
+    "metric": {
+      "all": 1,
+      "red": 1
+    }
+  },
+  {
+    "datetime": "2014-11-01",
+    "metric": {
+      "all": 1,
+      "red": 1
+    }
+  }
+]

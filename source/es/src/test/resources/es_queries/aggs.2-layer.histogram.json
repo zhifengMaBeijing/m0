@@ -1,0 +1,22 @@
+{
+  "aggs": {
+    "price": {
+      "histogram": {
+        "field": "price",
+        "interval": 20000
+      },
+      "aggs": {
+        "revenue": {
+          "sum": {
+            "field": "price"
+          }
+        },
+        "avg_price": {
+          "avg": {
+            "field": "price"
+          }
+        }
+      }
+    }
+  }
+}

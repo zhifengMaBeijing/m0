@@ -1,0 +1,113 @@
+{
+  "query": {
+    "description": "user select a group of objects and then query backend for aggregation result, the result should contain aggregation for both type and properties",
+    "nodes": [
+      {
+        "type": "person",
+        "id": "pid_100"
+      },
+      {
+        "type": "person",
+        "id": "pid_101"
+      },
+      {
+        "type": "organization",
+        "id": "oid_100"
+      },
+      {
+        "type": "organization",
+        "id": "oid_101"
+      }
+    ],
+    "agg_properties": {
+      "person": [
+        "gender"
+      ],
+      "organization": [
+        "location",
+        "industry"
+      ]
+    }
+  },
+  "result": {
+    "type_agg": {
+      "person": {
+        "count": 2,
+        "source": [
+          {
+            "id": "pid_100"
+          },
+          {
+            "id": "pid_101"
+          }
+        ]
+      },
+      "organization": {
+        "count": 2,
+        "source": [
+          {
+            "id": "oid_100"
+          },
+          {
+            "id": "oid_101"
+          }
+        ]
+      }
+    },
+    "property_agg": {
+      "person": {
+        "gender": {
+          "male": {
+            "count": 1,
+            "source": [
+              {
+                "id": "pid_100"
+              }
+            ]
+          },
+          "female": {
+            "count": 1,
+            "source": [
+              {
+                "id": "pid_101"
+              }
+            ]
+          }
+        }
+      },
+      "organization": {
+        "location": {
+          "beijing": {
+            "count": 1,
+            "source": [
+              {
+                "id": "oid_100"
+              }
+            ]
+          },
+          "shanghai": {
+            "count": 1,
+            "source": [
+              {
+                "id": "oid_101"
+              }
+            ]
+          }
+        },
+        "industry": {
+          "insurance": {
+            "count": 2,
+            "source": [
+              {
+                "id": "oid_100"
+              },
+              {
+                "id": "oid_101"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

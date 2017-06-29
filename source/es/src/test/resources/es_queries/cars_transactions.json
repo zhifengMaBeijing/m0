@@ -1,0 +1,65 @@
+1.first prepare data
+
+POST /cars/transactions/_bulk
+
+{ "index": {}}
+{ "price" : 10000, "color" : "red", "make" : "honda", "sold" : "2014-10-28" }
+{ "index": {}}
+{ "price" : 20000, "color" : "red", "make" : "honda", "sold" : "2014-11-05" }
+{ "index": {}}
+{ "price" : 30000, "color" : "green", "make" : "ford", "sold" : "2014-05-18" }
+{ "index": {}}
+{ "price" : 15000, "color" : "blue", "make" : "toyota", "sold" : "2014-07-02" }
+{ "index": {}}
+{ "price" : 12000, "color" : "green", "make" : "toyota", "sold" : "2014-08-19" }
+{ "index": {}}
+{ "price" : 20000, "color" : "red", "make" : "honda", "sold" : "2014-11-05" }
+{ "index": {}}
+{ "price" : 80000, "color" : "red", "make" : "bmw", "sold" : "2014-01-01" }
+{ "index": {}}
+{ "price" : 25000, "color" : "blue", "make" : "ford", "sold" : "2014-02-12" }
+
+
+2. then do some search
+POST /cars/transactions/_search
+
+
+/information/people2/_bulk
+{ "index": {"_id":"1000006"}}
+{"address":"北京市海淀区金马大厦1001","create_time":"2010-05-15","email":"s234235g@163.com","gender":"女","modify_time":"2014-01-16","name":"李怀斌","nation":"中国","ontology_type":"entity","phone":"13811117777","type":"people2"}
+{ "index": {"_id":"1000008"}}
+{"address":"北京市全市全区","create_time":"2010-05-15","email":"小分队@163.com","gender":"女","modify_time":"2014-01-16","name":"城管小分队","nation":"日本","ontology_type":"entity","phone":"13811117777","type":"people2"}
+{ "index": {"_id":"1000002"}}
+{"address":"安徽省屯溪市汤口镇","create_time":"2005-05-15","email":"zhengxuefen@qq.com","gender":"女","modify_time":"2010-11-26","name":"郑雪芬","nation":"中国","ontology_type":"entity","phone":"13833339999","type":"people2"}
+{ "index": {"_id":"1000001"}}
+{"address":"四川西南凉山彝族自治州内","create_time":"2001-02-15","email":"hulu@qq.com","gender":"男","modify_time":"2010-11-26","name":"金刚葫芦娃","nation":"中国","ontology_type":"entity","phone":"13822229999","type":"people2"}
+{ "index": {"_id":"1000003"}}
+{"address":"北京市海淀区回龙观流星花园小区2号楼301","create_time":"2007-05-15","email":"zhengxuebi@qq.com","gender":"女","modify_time":"2011-11-26","name":"刘雪碧","nation":"中国","ontology_type":"entity","phone":"13833336666","type":"people2"}
+{ "index": {"_id":"1000004"}}
+{"address":"北京市海淀区回龙观新龙城小区2号楼701","create_time":"2009-05-15","email":"yabing@163.com","gender":"男","modify_time":"2011-01-16","name":"苏亚斌","nation":"中国","ontology_type":"entity","phone":"13811116666","type":"people2"}
+{ "index": {"_id":"1000005"}}
+{"address":"北京市顺义区万科小区2号楼701","create_time":"2009-05-15","email":"shengqiang@163.com","gender":"男","modify_time":"2011-01-16","name":"丁胜强","nation":"中国","ontology_type":"entity","phone":"1381111555","type":"people2"}
+{ "index": {"_id":"1000007"}}
+{"address":"北京市朝阳海淀东城区","create_time":"2010-05-15","email":"郑和朝阳@163.com","gender":"女","modify_time":"2014-01-16","name":"朝阳群众","nation":"日本","ontology_type":"entity","phone":"13811117777","type":"people2"}
+
+
+{ "delete": {"_id":"0000006"}}
+{ "delete": {"_id":"0000002"}}
+{ "delete": {"_id":"0000001"}}
+{ "delete": {"_id":"0000003"}}
+{ "delete": {"_id":"0000008"}}
+{ "delete": {"_id":"0000004"}}
+{ "delete": {"_id":"0000005"}}
+{ "delete": {"_id":"0000007"}}
+
+
+/information/email1/_bulk
+{ "index": {"_id":"2000002"}}
+{"account":"hulu@qq.com","content":"7个人一起交作业, 语文数学不太会，英语看不懂，物理算不出来。","create_time":"2014-05-25","from":"金刚葫芦娃","language":"汉语","modify_time":"2017-01-06","ontology_type":"event","title":"交作业","to":"刘雪碧","type":"email1","name":"交作业","datetime":"2015-12-16"}
+{ "index": {"_id":"2000001"}}
+{"account":"小分队@163.com","content":"领导来检查，赶紧收摊回家，明天不准来了，后天也不准来了","create_time":"2010-05-15","from":"北京市全市全区","language":"汉语","modify_time":"2014-01-16","ontology_type":"event","title":"领导来检查","to":"刘雪碧","type":"email1","name":"领导来检查","date":"2016-10-24","datetime":"2016-10-24"}
+{ "index": {"_id":"2000003"}}
+{"account":"zhangliangying","content":"我明天开演唱会，全用英语唱，你带好翻译来","create_time":"2016-05-25","from":"张靓颖","language":"英语","modify_time":"2017-01-06","ontology_type":"event","title":"开演唱会","to":"李怀斌","type":"email1","name":"开演唱会","datetime":"2017-02-17"}
+
+
+

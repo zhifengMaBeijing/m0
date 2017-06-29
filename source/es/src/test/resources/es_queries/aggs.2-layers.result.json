@@ -1,0 +1,157 @@
+{
+  "took": 49,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 7,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "cars",
+        "_type": "transactions",
+        "_id": "AVyfaoNddZyJEjcQ1aiB",
+        "_score": 1,
+        "_source": {
+          "price": 10000,
+          "color": "red",
+          "make": "honda",
+          "sold": "2014-10-28"
+        }
+      },
+      {
+        "_index": "cars",
+        "_type": "transactions",
+        "_id": "AVyfaoNddZyJEjcQ1aiF",
+        "_score": 1,
+        "_source": {
+          "price": 12000,
+          "color": "green",
+          "make": "toyota",
+          "sold": "2014-08-19"
+        }
+      },
+      {
+        "_index": "cars",
+        "_type": "transactions",
+        "_id": "AVyfaoNddZyJEjcQ1aiC",
+        "_score": 1,
+        "_source": {
+          "price": 20000,
+          "color": "red",
+          "make": "honda",
+          "sold": "2014-11-05"
+        }
+      },
+      {
+        "_index": "cars",
+        "_type": "transactions",
+        "_id": "AVyfaoNddZyJEjcQ1aiD",
+        "_score": 1,
+        "_source": {
+          "price": 30000,
+          "color": "green",
+          "make": "ford",
+          "sold": "2014-05-18"
+        }
+      },
+      {
+        "_index": "cars",
+        "_type": "transactions",
+        "_id": "AVyfaoNddZyJEjcQ1aiG",
+        "_score": 1,
+        "_source": {
+          "price": 20000,
+          "color": "red",
+          "make": "honda",
+          "sold": "2014-11-05"
+        }
+      },
+      {
+        "_index": "cars",
+        "_type": "transactions",
+        "_id": "AVyfaoNddZyJEjcQ1aiH",
+        "_score": 1,
+        "_source": {
+          "price": 80000,
+          "color": "red",
+          "make": "bmw",
+          "sold": "2014-01-01"
+        }
+      },
+      {
+        "_index": "cars",
+        "_type": "transactions",
+        "_id": "AVyfaoNddZyJEjcQ1aiE",
+        "_score": 1,
+        "_source": {
+          "price": 15000,
+          "color": "blue",
+          "make": "toyota",
+          "sold": "2014-07-02"
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "colors": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "red",
+          "doc_count": 4,
+          "make": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "honda",
+                "doc_count": 3
+              },
+              {
+                "key": "bmw",
+                "doc_count": 1
+              }
+            ]
+          }
+        },
+        {
+          "key": "green",
+          "doc_count": 2,
+          "make": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "ford",
+                "doc_count": 1
+              },
+              {
+                "key": "toyota",
+                "doc_count": 1
+              }
+            ]
+          }
+        },
+        {
+          "key": "blue",
+          "doc_count": 1,
+          "make": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "toyota",
+                "doc_count": 1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
