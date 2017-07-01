@@ -1,0 +1,24 @@
+{
+  "_index": "atom",
+  "_type": "内战",
+  "_id": "Q81545",
+  "_score": 1,
+  "_source": {
+    "Freebase ID": "/m/0gfhg1y",
+    "image": "Tanks outside of Misrata (6) (8288579409).jpg",
+    "create_time": "2017-06-26 23:12:02",
+    "ontology_type": "event",
+    "modify_time": "2017-06-29 17:29:32",
+    "start time": "2011-02-15 08:00:00",
+    "type": "内战",
+    "end time": "2011-10-23 08:00:00",
+    "datetime": "2017-06-29 21:17:03",
+    "Commons category": "Libyan civil war",
+    "topic's main category": "Category:利比亚内战",
+    "name": "利比亚内战",
+    "location": "利比亚",
+    "id": "Q81545",
+    "coordinate location": "{\"globe\":\"http://www.wikidata.org/entity/Q2\",\"latitude\":31.195623,\"longitude\":16.52141,\"precision\":0.000010}",
+    "part of": "阿拉伯之春"
+  }
+}

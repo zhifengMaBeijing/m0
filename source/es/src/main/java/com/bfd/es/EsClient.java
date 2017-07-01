@@ -3,9 +3,12 @@ package com.bfd.es;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
+import org.elasticsearch.action.bulk.BulkRequestBuilder;
+import org.elasticsearch.action.bulk.BulkResponse;
 import org.elasticsearch.action.search.SearchRequestBuilder;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.search.SearchScrollRequestBuilder;
+import org.elasticsearch.client.Response;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
@@ -202,8 +205,14 @@ public class EsClient {
 
     private String parseHit(SearchHit hit, String[] includes) {
         StringBuffer sb = new StringBuffer();
+        int cursor = 1;
+        int length = includes.length;
         for (String include : includes) {
             sb.append(hit.getSource().get(include));
+            if (cursor < length) {
+                sb.append(",");
+            }
+            cursor += 1;
         }
         return String.format("%s,%s,%s", hit.getId(), hit.getType(), sb.substring(0));
     }
@@ -229,8 +238,29 @@ public class EsClient {
 
     }
 
-    public void bulkInsert(String index, String type, List<String> ids, List<String> docs) {
+    public void bulkInsert(String index, String type, String[] ids, String[] docs) {
+        try {
+            BulkRequestBuilder bulkRequest = this.esClient.prepareBulk();
+
+            for (int i = 0; i < ids.length; i++) {
+                bulkRequest.add(this.esClient.prepareIndex(index, type, ids[i]).setSource(docs[i]));
+            }
+
+            BulkResponse rs = bulkRequest.get();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void addMapping(String index, String type, String mappingSource) {
+        System.out.println(mappingSource);
+
+        this.esClient.admin().indices().preparePutMapping(index)
+                .setType(type)
+                .setSource(mappingSource)
+                .get();
 
     }
+
 
 }

@@ -1,3 +1,484 @@
-{"took":6,"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":8,"max_score":1.0,"hits":[{"_index":"information","_type":"people2","_id":"0000006","_score":1.0,
-  "_source":{"address":"北京市海淀区金马大厦1001","create_time":"2010-05-15","email":"s234235g@163.com","gender":"女","modify_time":"2014-01-16","name":"李怀斌","nation":"中国","ontology_type":"entity","phone":"13811117777","type":"people2"}},{"_index":"information","_type":"people2","_id":"0000008","_score":1.0,
-  "_source":{"address":"北京市全市全区","create_time":"2010-05-15","email":"小分队@163.com","gender":"女","modify_time":"2014-01-16","name":"城管小分队","nation":"日本","ontology_type":"entity","phone":"13811117777","type":"people2"}},{"_index":"information","_type":"people2","_id":"0000002","_score":1.0,"_source":{"address":"安徽省屯溪市汤口镇","create_time":"2005-05-15","email":"zhengxuefen@qq.com","gender":"女","modify_time":"2010-11-26","name":"郑雪芬","nation":"中国","ontology_type":"entity","phone":"13833339999","type":"people2"}},{"_index":"information","_type":"people2","_id":"0000001","_score":1.0,"_source":{"address":"四川西南凉山彝族自治州内","create_time":"2001-02-15","email":"hulu@qq.com","gender":"男","modify_time":"2010-11-26","name":"金刚葫芦娃","nation":"中国","ontology_type":"entity","phone":"13822229999","type":"people2"}},{"_index":"information","_type":"people2","_id":"0000003","_score":1.0,"_source":{"address":"北京市海淀区回龙观流星花园小区2号楼301","create_time":"2007-05-15","email":"zhengxuebi@qq.com","gender":"女","modify_time":"2011-11-26","name":"刘雪碧","nation":"中国","ontology_type":"entity","phone":"13833336666","type":"people2"}},{"_index":"information","_type":"people2","_id":"0000004","_score":1.0,"_source":{"address":"北京市海淀区回龙观新龙城小区2号楼701","create_time":"2009-05-15","email":"yabing@163.com","gender":"男","modify_time":"2011-01-16","name":"苏亚斌","nation":"中国","ontology_type":"entity","phone":"13811116666","type":"people2"}},{"_index":"information","_type":"people2","_id":"0000005","_score":1.0,"_source":{"address":"北京市顺义区万科小区2号楼701","create_time":"2009-05-15","email":"shengqiang@163.com","gender":"男","modify_time":"2011-01-16","name":"丁胜强","nation":"中国","ontology_type":"entity","phone":"1381111555","type":"people2"}},{"_index":"information","_type":"people2","_id":"0000007","_score":1.0,"_source":{"address":"北京市朝阳海淀东城区","create_time":"2010-05-15","email":"郑和朝阳@163.com","gender":"女","modify_time":"2014-01-16","name":"朝阳群众","nation":"日本","ontology_type":"entity","phone":"13811117777","type":"people2"}}]}}
+{
+  "edges": [
+    {
+      "id": "EventConnectionId10000002",
+      "source": "Q364208",
+      "target": "Q450318",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId10000023",
+      "source": "Q374707",
+      "target": "Q450318",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId2000003",
+      "source": "Q364208",
+      "target": "1006",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId3000003",
+      "source": "Q403519",
+      "target": "1006",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId3000254",
+      "source": "Q364208",
+      "target": "1205",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId2000254",
+      "source": "Q404341",
+      "target": "1205",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId2000611",
+      "source": "Q364208",
+      "target": "1237",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId3000611",
+      "source": "Q391736",
+      "target": "1237",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId3000864",
+      "source": "Q364208",
+      "target": "1504",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId2000864",
+      "source": "Q404485",
+      "target": "1504",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId3000922",
+      "source": "Q364208",
+      "target": "1788",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId2000922",
+      "source": "Q404485",
+      "target": "1788",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId5000003",
+      "source": "Q364208",
+      "target": "3011",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId6000003",
+      "source": "Q403519",
+      "target": "3011",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId6000254",
+      "source": "Q364208",
+      "target": "3401",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId5000254",
+      "source": "Q404341",
+      "target": "3401",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId5000611",
+      "source": "Q364208",
+      "target": "3195",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId6000611",
+      "source": "Q391736",
+      "target": "3195",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId6000864",
+      "source": "Q364208",
+      "target": "3455",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId5000864",
+      "source": "Q404485",
+      "target": "3455",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId6000922",
+      "source": "Q364208",
+      "target": "3745",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId5000922",
+      "source": "Q404485",
+      "target": "3745",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId7000003",
+      "source": "Q364208",
+      "target": "2022",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId8000003",
+      "source": "Q403519",
+      "target": "2022",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId8000254",
+      "source": "Q364208",
+      "target": "2410",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId7000254",
+      "source": "Q404341",
+      "target": "2410",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId7000611",
+      "source": "Q364208",
+      "target": "2155",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId8000611",
+      "source": "Q391736",
+      "target": "2155",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId8000864",
+      "source": "Q364208",
+      "target": "2411",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId7000864",
+      "source": "Q404485",
+      "target": "2411",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId8000922",
+      "source": "Q364208",
+      "target": "2759",
+      "type": "arrow"
+    },
+    {
+      "id": "EventConnectionId7000922",
+      "source": "Q404485",
+      "target": "2759",
+      "type": "arrow"
+    }
+  ],
+  "nodes": [
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "Q450318",
+      "infoType": "战役",
+      "label": "基伯龙湾海战",
+      "type": "square",
+      "x": -7.354962792286157E85,
+      "y": -1.1310063512034407E84
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "Q374707",
+      "infoType": "人类",
+      "label": "Jacob Neumann",
+      "type": "square",
+      "x": 4.5727508418100164E84,
+      "y": 7.031728630880595E82
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "1006",
+      "infoType": "通信",
+      "label": "通信",
+      "type": "square",
+      "x": -7.42955949027914E85,
+      "y": -1.1424774274809921E84
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "Q403519",
+      "infoType": "人类",
+      "label": "Ismail Safwat",
+      "type": "square",
+      "x": 1.582516201861834E85,
+      "y": 2.4335077222487773E83
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "1205",
+      "infoType": "通信",
+      "label": "通信",
+      "type": "square",
+      "x": -7.42955949027914E85,
+      "y": -1.1424774274809921E84
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "Q404341",
+      "infoType": "人类",
+      "label": "Grace Hightower",
+      "type": "square",
+      "x": 1.582516201861834E85,
+      "y": 2.4335077222487773E83
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "1237",
+      "infoType": "通信",
+      "label": "通信",
+      "type": "square",
+      "x": -7.42955949027914E85,
+      "y": -1.1424774274809921E84
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "Q391736",
+      "infoType": "人类",
+      "label": "Johann Ernst Basilius Wiedeburg",
+      "type": "square",
+      "x": 1.582516201861834E85,
+      "y": 2.4335077222487773E83
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "1504",
+      "infoType": "通信",
+      "label": "通信",
+      "type": "square",
+      "x": -7.59727837494441E85,
+      "y": -1.1682683293700026E84
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "Q404485",
+      "infoType": "人类",
+      "label": "William C. Wallace",
+      "type": "square",
+      "x": 4.112442999086619E85,
+      "y": 6.32389215592938E83
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "1788",
+      "infoType": "通信",
+      "label": "通信",
+      "type": "square",
+      "x": -7.59727837494441E85,
+      "y": -1.1682683293700026E84
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "3011",
+      "infoType": "打电话",
+      "label": "打电话",
+      "type": "square",
+      "x": -7.42955949027914E85,
+      "y": -1.1424774274809921E84
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "3401",
+      "infoType": "打电话",
+      "label": "打电话",
+      "type": "square",
+      "x": -7.42955949027914E85,
+      "y": -1.1424774274809921E84
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "3195",
+      "infoType": "打电话",
+      "label": "打电话",
+      "type": "square",
+      "x": -7.42955949027914E85,
+      "y": -1.1424774274809921E84
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "3455",
+      "infoType": "打电话",
+      "label": "打电话",
+      "type": "square",
+      "x": -7.59727837494441E85,
+      "y": -1.1682683293700026E84
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "3745",
+      "infoType": "打电话",
+      "label": "打电话",
+      "type": "square",
+      "x": -7.59727837494441E85,
+      "y": -1.1682683293700026E84
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "2022",
+      "infoType": "发邮件",
+      "label": "发邮件",
+      "type": "square",
+      "x": -7.42955949027914E85,
+      "y": -1.1424774274809921E84
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "2410",
+      "infoType": "发邮件",
+      "label": "发邮件",
+      "type": "square",
+      "x": -7.42955949027914E85,
+      "y": -1.1424774274809921E84
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "2155",
+      "infoType": "发邮件",
+      "label": "发邮件",
+      "type": "square",
+      "x": -7.42955949027914E85,
+      "y": -1.1424774274809921E84
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "2411",
+      "infoType": "发邮件",
+      "label": "发邮件",
+      "type": "square",
+      "x": -7.59727837494441E85,
+      "y": -1.1682683293700026E84
+    },
+    {
+      "active": false,
+      "data": {
+        "quality": "",
+        "quantity": 1
+      },
+      "id": "2759",
+      "infoType": "发邮件",
+      "label": "发邮件",
+      "type": "square",
+      "x": -7.59727837494441E85,
+      "y": -1.1682683293700026E84
+    },
+    {
+      "active": true,
+      "data": {
+        "quality": "user-o",
+        "quantity": 1
+      },
+      "id": "Q364208",
+      "infoType": "人类",
+      "label": "label",
+      "type": "square",
+      "x": 1.1048740176561176E87,
+      "y": 1.6990154356176013E85
+    }
+  ]
+}

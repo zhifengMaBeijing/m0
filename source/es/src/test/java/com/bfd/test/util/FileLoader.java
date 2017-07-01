@@ -15,4 +15,10 @@ public class FileLoader {
                 Thread.currentThread().getContextClassLoader().getResource(path).toURI()
         ));
     }
+
+    public static File loadFile(String path) throws URISyntaxException {
+        return new File(
+                Thread.currentThread().getContextClassLoader().getResource(path).toURI());
+    }
+
 }
