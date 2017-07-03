@@ -1,3 +1,5 @@
+https://javabrains.io/courses/spring_bootquickstart
+
 spring make web application easier.
 
 overview of spring architecture?
@@ -71,3 +73,20 @@ any other alternatives? mybatis
 the following example could be used to refactor neo4j JDBC api
 
 http://www.tutorialspoint.com/spring/spring_jdbc_example.htm
+
+
+4. spring mvc
+https://www.youtube.com/watch?v=iCQspqBpOB0
+
+
+teamtreehourse.com
+
+
+spring?
+
+-application framework
+  huge framework,  solve common business problem, no need repeat for every application.
+-program and configuration model
+  multiple step config
+-infrastructure support
+  
