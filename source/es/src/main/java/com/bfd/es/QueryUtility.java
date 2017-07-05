@@ -64,7 +64,7 @@ public class QueryUtility {
                     TopHits topHits = childEntry.getAggregations().get(aggStr);
                     if (childAggs != null) {
                         for (SearchHit hit : topHits.getHits().getHits()) {
-                            String id = hit.getId() + hit.getType();
+                            String id = hit.getId() ;
                             ids.add(id);
                         }
                     }

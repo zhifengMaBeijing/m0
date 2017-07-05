@@ -73,6 +73,29 @@ public class TestAggs {
         }
     }
 
+
+    @Test
+    public void timeAnalysisNew() {
+        String index = "atom";
+        String[] types = {"发邮件"};
+
+        String[] ids = {"2001"};
+
+        String dateField = "date_time";
+        String termField = "from.keyword";
+
+        try {
+            EsClient client = new EsClient("172.24.5.149", "9300", "logging-dev");
+            JSONObject result = client.dateHistogramSubterm(index, types, ids, dateField, termField);
+            System.out.println(result.toString());
+            //assert (result.containsKey("2014-08-01"));
+            //assert (expected.compareTo(result.toString()) == 0);
+        } catch (Exception e) {
+            e.printStackTrace();
+            assert (false);
+        }
+    }
+
     @Test
     public void dumpData() {
         String index = "atom";
