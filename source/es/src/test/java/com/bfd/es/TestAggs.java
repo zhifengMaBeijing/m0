@@ -147,10 +147,10 @@ public class TestAggs {
 
     @Test
     public void dumpDataScrollEvent() {
-        String index = "atom";
+        String index = "atom_v3";
         //String[] types = {"战役", "内战","通信","发邮件"};
         String[] types = {"打电话"};
-        String[] includes = {"name", "datetime"};
+        String[] includes = {"name", "create_time"};
         try {
             EsClient client = new EsClient("172.24.5.149", "9300", "logging-dev");
             int page = 1000;
@@ -283,6 +283,7 @@ public class TestAggs {
             mDoc.put("type", type);
             mDoc.put("id", ids[i]);
             mDoc.put("name", name);
+            mDoc.put("image","");
 
             String dateTimeString = RandomDate.randomDateString("2015-01-01 00:00:00", "2017-06-29 00:00:00");
             Date date = RandomDate.randomDate("2015-01-01 00:00:00", "2017-06-29 00:00:00");
@@ -290,6 +291,8 @@ public class TestAggs {
             mDoc.put("date_time", date);
             mDoc.put("modify_time", "2017-06-29 17:29:32");
             mDoc.put("create_time", "2017-06-26 23:12:02");
+            mDoc.put("modifier","zf");
+
             String[] items = line.trim().split(",");
 
             mDoc.put("from", items[0].trim());
