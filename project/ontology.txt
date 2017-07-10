@@ -1,0 +1,25 @@
+
+本体对象模型位于物理存储和用户之间，动态本体对象建模是系统的核心。
+
+
+1.建模
+
+
+统计分析？
+
+
+类型
+
+类型数据结构
+
+类型之间的关系
+
+
+2.配置管理
+
+schema 可维护性
+
+panlantires schema
+   
+   add data source to each object/record
+   xml is used hold the rich data structure
