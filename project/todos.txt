@@ -40,6 +40,8 @@ neo4j中查询与该节点有关联节点，返回该节点及关联节点。返
 时间轴变换（最小粒度）
 
 
+
+
 6. neo4j schema （志峰）
 neo4j节点包含name字段？更新概要设计？
 
@@ -57,11 +59,16 @@ how events are linked to the Knowledge Graph; and what it takes to show your eve
 
 
 7-8
-两个节点间的边如何避免重叠？（曲线）
+两个节点间的边如何避免重叠？（直线 + 曲线）
 https://github.com/jacomyal/sigma.js/blob/master/examples/edge-renderers.html
 
-多节点的关系如何挖掘？
 
-添加一个image
+多节点的关系如何挖掘？
+   交集还是并集？
+
+添加一个image（done）
+
+
+
 
 

@@ -1,0 +1,55 @@
+1. 部署
+配置文件学习和复审
+
+2. 性能问题
+
+联合搜索和快速搜索
+https://stackoverflow.com/questions/3025692/speed-up-a-web-service-for-auto-complete-and-avoid-too-many-method-calls
+http://msdn.microsoft.com/en-us/library/system.web.httpcontext.cache.aspx
+
+Speed up a web service for auto complete and avoid too many method calls
+auto complete can only kick in after at least 3 characters have been typed; otherwise the results are too broad to matter;
+the list should continually get smaller as the user types more, so cache the original list on the client-side and filter it as the user continues typing more chars. If the user backspaces past the original result set then grab a new one from the server and do the same with it.
+employ a client-side timer to issue calls no sooner than 2 or 3 seconds apart. keydown would detect a change in the text box and when your timer fires it looks at that flag to determine if it should pull data again
+
+
+3. 错误处理
+
+服务器端需要try ...catch... finally
+
+前端需要根据返回码进行错误处理，前端不会收到后端抛出的异常
+
+The server code lacks error-handling. It should have a try block around the bulk of the code, with a catch block that logs the error and returns something safe, like an empty string.
+It should also ensure that all disposable objects are disposed of, preferably by using the using statement. Along with parameterizing, these are basic requirements for a stable server
+
+
+4. 部署
+
+4.0 network connectivity
+
+4.1 hardware requirement
+情报分析与联合搜索服务硬件需求（APP1）
+  CPU
+  RAM
+  Disk space
+  NIC
+
+4.2. software requirement
+http://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-system-requirements.html
+  OS
+java 8+
+  依赖的运行时如何维护和部署？
+
+
+user to run the app?
+deploy directory?
+
+4.3 配置管理
+
+parameters: env related
+applicaiton related
+
+
+4.4 监控
+
+Spring Boot Actuator : for spring MVC only
