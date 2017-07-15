@@ -9,3 +9,48 @@
 1. 圆形-半径
 2. 多边形？
 3. 路径上？
+
+
+how to make a perfect auto completion?
+
+搜索的核心问题： 文本处理
+lunce的核心工作原理
+
+filter vs query
+  当需要打分时，用query
+  
+  top 10?
+  
+  input -> terms -> search by terms
+
+
+1. how many index?  
+
+你需要使用父子文档吗？如果需要，只能在一个 index 里建立多个 type。
+你的文档的映射是否相似？如果不相似，使用多个 index。
+如果你的每个 type 都有足够多的文档，Lucene Index 的开销可以被分摊掉，你就可以安全的使用多个 index 了。如果有必要的话，可以把分片数量设小一点。
+如果文档不够多，你可以考虑把文档放进一个 index 里的多个 type 里，甚至放进一个 type 里。
+
+
+一个大索引 vs 一些小索引
+
+按mapping 相似度将类型分组，每组建立一个索引。
+
+
+2. how many shards each index?
+
+3. schema of each index?
+
+4. how many types？
+一个类型 vs 一些类型？
+
+稀疏
+lucene 索引不喜欢稀疏，当一个索引下有多个类型，只在某个类型存在某字段，在其他没有该字段的type中，也会消耗资源。
+
+how to partition data evenly?
+
+
+
+参考视频： https://www.youtube.com/watch?v=PpX7J-G2PEo
+https://www.elastic.co/blog/found-elasticsearch-in-production
+

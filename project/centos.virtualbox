@@ -1,0 +1,74 @@
+How to setup elastic search on linux?
+   
+   ./elasticsearch -d
+
+   
+   /_cat/nodes?v
+   /_cat/health?v
+   
+   :when change localhost to real ip we met several errors during startup. below post help solve them.
+   http://blog.csdn.net/liangzhao_jay/article/details/56840941
+   
+   http://10.0.2.15:9200/_cat/indices?v
+   
+How to access guest vm from host?
+    # one nic for NAT, one nat for host only
+	# system-config-firewall to expose port need.
+	https://aruljohn.com/info/virtualbox-access-guest-from-host-nat/
+	
+
+How to install guest tool for CentOS 6?
+    https://www.youtube.com/watch?v=-nIE2vac0iA
+	
+	su
+	
+    #dhclient    #dynamic host configuration protocol client
+	
+	
+    #yum groupinstall "Development Tools"
+	
+	#cd /media/V*
+	#./V*
+	
+
+
+How to create user, set passwd and Add User to root Group on CentOS 6?
+    # groups   # show groups for current user
+	
+	# useradd 
+	# passwd zhifeng
+	# usermod -G root zhifeng
+	# grep zhifeng /etc/group  #check whether zhifeng has been added to root g
+
+How to CUSTOMIZING THE LOGIN SCREEN?
+	
+How to check the os version?
+    # cat /etc/redhat-release
+	# uname -a
+
+How to check the ip ad?
+    # ip ad
+	
+How to  copy and paste between the host machine and the guest machine or vice versa
+
+How to install software on linux? JDK
+ Linux下安装jdk8步骤详述
+    #vim /etc/profile
+	JAVA_HOME=/usr/jdk
+    CLASSPATH=$JAVA_HOME/lib/
+	PATH=$PATH:$JAVA_HOME/bin
+	export PATH JAVA_HOME CLASSPATH
+	#source /etc/profile
+	
+	#update-alternatives --install /usr/bin/java java /usr/jdk/bin/java 100000
+    #alternatives --config java
+	#alternatives --display
+
+
+how to use GNOM?
+https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Desktop_Migration_and_Administration_Guide/customizing-login-screen.html
+
+
+
+
+

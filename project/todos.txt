@@ -69,6 +69,25 @@ https://github.com/jacomyal/sigma.js/blob/master/examples/edge-renderers.html
 添加一个image（done）
 
 
+7-15
+
+----------------
+实现IsTimeAnalysis
+  
+
+IsTimeAnalysis：该字段是否为时间分析字段，用在时间轴分析中。事件必须配有时间分析字段
+
+displayorder：标记该属性在前台显示的顺序。当前没有实现，可以忽略。
+
+IsIndex：联合搜索用字段。标记该字段支持全文检索
+
+isKey: 标记该属性是否是主键
+
+-----------------
+和天新数据接上。
+
+es model change
+   index or type?
 
 
 
