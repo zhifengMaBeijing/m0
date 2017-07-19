@@ -1,0 +1,22 @@
+https://neo4j-rest-client.readthedocs.io/en/latest/transactions.html
+
+https://michaelbloggs.blogspot.jp/2013/05/importing-ttl-turtle-ontologies-in-neo4j.html
+
+
+https://www.youtube.com/watch?v=78r0MgH0u0w
+
+If you run Neo4j in server mode, you can actually write Cypher queries, pick up a driver for the language of your choice :
+
+http://neo4j.com/developer/language-guides/
+
+And a complete Cypher guide is ready for you to read :
+
+http://neo4j.com/docs/stable/cypher-query-lang.html
+
+You can also follow the free online courses :
+
+http://neo4j.com/graphacademy/online-training/
+
+You can also find a huge list of curated Neo4j resources here :
+
+https://github.com/GraphGeeks/awesome-neo4j
