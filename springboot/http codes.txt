@@ -1,0 +1,15 @@
+401 unauthorized
+403 Access denied
+404 not find
+
+management.port=9001
+#actuator endpoints to be accessible without authentication
+management.security.enabled=false
+
+
+spring-boot-starter-parent -> 1.5.4.RELEASE
+
+jps | grep
+
+
+2017-07-18 21:53:26.319  INFO 1624 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
