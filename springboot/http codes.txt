@@ -2,7 +2,29 @@
 403 Access denied
 404 not find
 
-management.port=9001
+
+
+https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-monitoring.html
+
+$ curl -i localhost:8080/health
+HTTP/1.1 200
+X-Application-Context: application
+Content-Type: application/vnd.spring-boot.actuator.v1+json;charset=UTF-8
+Content-Length: 15
+
+{"status":"UP"}
+
+
+$ curl -i localhost:8080/health
+HTTP/1.1 503
+X-Application-Context: application
+Content-Type: application/vnd.spring-boot.actuator.v1+json;charset=UTF-8
+Content-Length: 17
+
+{"status":"DOWN"}
+
+management.port=9001 //  port should be openeed on deployed server : it might not work!! contact zhangping
+
 #actuator endpoints to be accessible without authentication
 management.security.enabled=false
 
