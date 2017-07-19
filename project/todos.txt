@@ -64,4 +64,54 @@ https://github.com/jacomyal/sigma.js/blob/master/examples/edge-renderers.html
 
 添加一个image
 
+如何自制？
+
+
+7-17
+
+1、提测搜索、分析 =》周5前提测邮件发出
+	1.1 对接数据，如数据对接问题较大，及时拉我沟通
+	-实体和文档的关系模型变化支持，即由事件扩文档。 （熊瑾）
+	
+	1.2 Bug修复
+		如：
+		1. 快捷键点显示等（如还没有改正）	
+		2. 删除点后的保存问题 （明宇）
+		
+2、性能、效果优化 
+	2.1 前端点增多后浏览器卡顿（看是否有好的solution）
+	其他
+	
+	search around 性能提高？（明宇，熊瑾）
+	   联合搜索：打电话 -》情报分析　－》search around (> 10s)
+	   
+	2.2 时间轴上缩放效果、性能优化（缩小看易，放大看细节慢）
+	（彦青）
+	
+	2.3 布局算法优化， 点多后现在有问题 
+	
+	层次布局 （倪路）
+	    多子图问题，分子图做分层
+	自动布局 （总结布局用例）
+	    点多后自动布局不明显(pea cock)不明显
+	
+3、DEMO未完点
+	3.1 画布中图片显示
+	后端：search around添加image字段
+	
+	3.2 画布视角变动优化
+	
+4、部署文档
+4.1 前后端撰写部署文档，格式前后端统一，需要达到的效果：
+     文档和软件给到运维人员，运维能够进行部署，和大模块是否安装OK的Check
+
+另： 测试环境请每天晚上更新一版（可用），其余时间可不做更新
+1) 后端自动部署（master） -熊瑾
+2）git开发流程 （志峰）
+
+
+
+{"data":{"nodes":[{"active":false,"data":{"quality":"user-o","quantity":1},"id":"Q1147586","infoType":"人类","label":"Clodi...","length":"","type":"square","x":0.9504750296901135,"y":0.21736913898388963,"icon":{"font":"FontAwesome","scale":1,"color":"#03a9f4","content":""},"fullLabel":"Clodi...","size":1,"color":"#fff","read_cam0:size":20,"read_cam0:x":203.3011655552927,"read_cam0:y":-106.2505707428138,"renderer1:x":709.6477444442897,"renderer1:y":145.38201721010952,"renderer1:size":15.339299776947408},{"active":false,"data":{"quality":"user-o","quantity":1},"id":"Q12588424","infoType":"人类","label":"金仁泰","length":"","type":"square","x":0.8746598696868646,"y":0.9663234534341193,"icon":{"font":"FontAwesome","scale":1,"color":"#03a9f4","content":""},"size":1,"color":"#fff","read_cam0:size":20,"read_cam0:x":172.99405996591562,"read_cam0:y":193.14387080014282,"renderer1:x":691.820035274068,"renderer1:y":321.4963945883193,"renderer1:size":15.339299776947408},{"active":false,"data":{"quality":"user-o","quantity":1},"id":"Q95404","infoType":"人类","label":"Rebec...","length":"","type":"square","x":0.9107468787247479,"y":0.2555944519345109,"icon":{"font":"FontAwesome","scale":1,"color":"#03a9f4","content":""},"fullLabel":"Rebec...","size":1,"color":"#fff","read_cam0:size":20,"read_cam0:x":187.41983962883614,"read_cam0:y":-90.97000422113376,"renderer1:x":700.3057880169624,"renderer1:y":154.37058575227425,"renderer1:size":15.339299776947408},{"active":false,"data":{"quality":"user-o","quantity":1},"id":"Q26209004","infoType":"人类","label":"杨晖","length":"","type":"square","x":0.21891431162482267,"y":0.5280739200245839,"icon":{"font":"FontAwesome","scale":1,"color":"#03a9f4","content":""},"size":1,"color":"#fff","read_cam0:size":20,"read_cam0:x":-89.14018689315095,"read_cam0:y":17.953646536699516,"renderer1:x":537.623419474617,"renderer1:y":218.44332149217618,"renderer1:size":15.339299776947408},{"active":true,"data":{"quality":"phone","quantity":1},"id":"3002","infoType":"打电话","label":"打电话","length":"","type":"square","x":-0.06666666666666667,"y":0,"icon":{"font":"FontAwesome","scale":1,"color":"#fff","content":""},"size":1,"read_cam0:size":20,"read_cam0:x":-203.3011655552927,"read_cam0:y":-193.14387080014282,"renderer1:x":470.4699026145337,"renderer1:y":94.26831129403362,"renderer1:size":15.339299776947408,"color":"#19aa8d"},{"active":true,"data":{"quality":"phone","quantity":1},"id":"3006","infoType":"打电话","label":"打电话","length":"","type":"square","x":0.06666666666666667,"y":0,"icon":{"font":"FontAwesome","scale":1,"color":"#fff","content":""},"size":1,"read_cam0:size":20,"read_cam0:x":-150.0011736836964,"read_cam0:y":-193.14387080014282,"renderer1:x":501.8228390095903,"renderer1:y":94.26831129403362,"renderer1:size":15.339299776947408,"color":"#19aa8d"}],"edges":[{"id":"EventConnectionIdNo90001776","isMerged":null,"label":"phone","rawData":null,"source":"Q1147586","target":"3002","type":"arrow","size":1,"read_cam0:size":1,"renderer1:size":0.7669649888473704,"active":false},{"id":"EventConnectionIdNo80001776","isMerged":null,"label":"phone","rawData":null,"source":"Q12588424","target":"3002","type":"arrow","size":1,"read_cam0:size":1,"renderer1:size":0.7669649888473704,"active":false},{"id":"EventConnectionIdNo90001777","isMerged":null,"label":"phone","rawData":null,"source":"Q95404","target":"3006","type":"arrow","size":1,"read_cam0:size":1,"renderer1:size":0.7669649888473704,"active":false},{"id":"EventConnectionIdNo80001777","isMerged":null,"label":"phone","rawData":null,"source":"Q26209004","target":"3006","type":"arrow","size":1,"read_cam0:size":1,"renderer1:size":0.7669649888473704,"active":false}]},"type":"ENTITY","mergedEdges":[]}
+
+
 
