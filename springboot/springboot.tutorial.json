@@ -1,14 +1,26 @@
+
+0. spring?
+
+-application framework
+  huge framework,  solve common business problem, no need repeat for every application.
+-program and configuration model
+  multiple step config
+-infrastructure support
+
+
+1.  Learn Spring Boot (MVC) in 50 Minutes
+
 https://javabrains.io/courses/spring_bootquickstart
+   actuator
+   
+
+
 
 spring make web application easier.
 
 overview of spring architecture?
 JPA: java persistence API
 map relation database to object, operate on object.
-
-
-1.  Learn Spring Boot (MVC) in 50 Minutes
-
 
 In this tutorial I show how to build a N tier architecture application featuring 3 layers where : 
 
@@ -45,19 +57,16 @@ Please don't forget to subscribe.
 
 
 2. caching with spring: advaced topics and best practice
-
+https://www.youtube.com/watch?v=3NLS7147UQo
 what to cache?  cache read operations
 where to cache? different layer (database itself, access layer, business layer, http cache)
 which cache product to use?
 local vs distributed?
 
 
-
 cache does not provide security
+Spring tutorial 2
 
-
-
-https://www.youtube.com/watch?v=3NLS7147UQo
 
 
 3 with mysql
@@ -79,19 +88,9 @@ http://www.tutorialspoint.com/spring/spring_jdbc_example.htm
 https://www.youtube.com/watch?v=iCQspqBpOB0
 
 
-teamtreehourse.com
-
-
-spring?
-
--application framework
-  huge framework,  solve common business problem, no need repeat for every application.
--program and configuration model
-  multiple step config
--infrastructure support
-
-
 IoC
 AOP
 
+  
+5. teamtreehourse.com
   
