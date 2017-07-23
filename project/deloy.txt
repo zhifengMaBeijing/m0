@@ -1,0 +1,8 @@
+
+
+7. Build project and execute from command line with the added properties as below:
+java -jar target\demo-0.0.1-SNAPSHOT.jar --spring.config.location=a.properties,b.properties --cmd.text=abc123
+
+
+1. post check
+health port could be accessed.
