@@ -1,0 +1,7 @@
+
+http://www.jianshu.com/p/15774b6b7eb9
+
+query parser:
+Parsing search queries in Java
+Lucene: Powerful Java-based search engine, contains a query parser but it isn't very configurable and I could find a way to easily hack/adapt it to create SQL queries.
+ANTLR: A veteran text lexer-parser. 

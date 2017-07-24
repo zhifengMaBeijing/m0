@@ -41,3 +41,32 @@ zoom in/zoom out
 5.2 自动
 变化触发
 
+
+
+热力图？
+
+ip （暂不考虑）
+gps (优先)
+user loc (string)
+
+model
+  object
+  properties
+
+复杂搜索
+  属性搜索隐藏掉
+
+战法
+  社交
+    意见领袖
+  实时
+    数据驱动的算法开发 
+  
+  批处理
+  战法的语言描述
+  
+用户语言
+  redis
+  语言表
+
+  
