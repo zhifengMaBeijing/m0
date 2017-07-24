@@ -40,6 +40,8 @@ neo4j中查询与该节点有关联节点，返回该节点及关联节点。返
 时间轴变换（最小粒度）
 
 
+
+
 6. neo4j schema （志峰）
 neo4j节点包含name字段？更新概要设计？
 
@@ -57,12 +59,36 @@ how events are linked to the Knowledge Graph; and what it takes to show your eve
 
 
 7-8
-两个节点间的边如何避免重叠？（曲线）
+两个节点间的边如何避免重叠？（直线 + 曲线）
 https://github.com/jacomyal/sigma.js/blob/master/examples/edge-renderers.html
 
-多节点的关系如何挖掘？
 
-添加一个image
+多节点的关系如何挖掘？
+   交集还是并集？
+
+添加一个image（done）
+
+
+7-15
+
+----------------
+实现IsTimeAnalysis
+  
+
+IsTimeAnalysis：该字段是否为时间分析字段，用在时间轴分析中。事件必须配有时间分析字段
+
+displayorder：标记该属性在前台显示的顺序。当前没有实现，可以忽略。
+
+IsIndex：联合搜索用字段。标记该字段支持全文检索
+
+isKey: 标记该属性是否是主键
+
+-----------------
+和天新数据接上。
+
+es model change
+   index or type?
+
 
 如何自制？
 
@@ -112,6 +138,58 @@ https://github.com/jacomyal/sigma.js/blob/master/examples/edge-renderers.html
 
 
 {"data":{"nodes":[{"active":false,"data":{"quality":"user-o","quantity":1},"id":"Q1147586","infoType":"人类","label":"Clodi...","length":"","type":"square","x":0.9504750296901135,"y":0.21736913898388963,"icon":{"font":"FontAwesome","scale":1,"color":"#03a9f4","content":""},"fullLabel":"Clodi...","size":1,"color":"#fff","read_cam0:size":20,"read_cam0:x":203.3011655552927,"read_cam0:y":-106.2505707428138,"renderer1:x":709.6477444442897,"renderer1:y":145.38201721010952,"renderer1:size":15.339299776947408},{"active":false,"data":{"quality":"user-o","quantity":1},"id":"Q12588424","infoType":"人类","label":"金仁泰","length":"","type":"square","x":0.8746598696868646,"y":0.9663234534341193,"icon":{"font":"FontAwesome","scale":1,"color":"#03a9f4","content":""},"size":1,"color":"#fff","read_cam0:size":20,"read_cam0:x":172.99405996591562,"read_cam0:y":193.14387080014282,"renderer1:x":691.820035274068,"renderer1:y":321.4963945883193,"renderer1:size":15.339299776947408},{"active":false,"data":{"quality":"user-o","quantity":1},"id":"Q95404","infoType":"人类","label":"Rebec...","length":"","type":"square","x":0.9107468787247479,"y":0.2555944519345109,"icon":{"font":"FontAwesome","scale":1,"color":"#03a9f4","content":""},"fullLabel":"Rebec...","size":1,"color":"#fff","read_cam0:size":20,"read_cam0:x":187.41983962883614,"read_cam0:y":-90.97000422113376,"renderer1:x":700.3057880169624,"renderer1:y":154.37058575227425,"renderer1:size":15.339299776947408},{"active":false,"data":{"quality":"user-o","quantity":1},"id":"Q26209004","infoType":"人类","label":"杨晖","length":"","type":"square","x":0.21891431162482267,"y":0.5280739200245839,"icon":{"font":"FontAwesome","scale":1,"color":"#03a9f4","content":""},"size":1,"color":"#fff","read_cam0:size":20,"read_cam0:x":-89.14018689315095,"read_cam0:y":17.953646536699516,"renderer1:x":537.623419474617,"renderer1:y":218.44332149217618,"renderer1:size":15.339299776947408},{"active":true,"data":{"quality":"phone","quantity":1},"id":"3002","infoType":"打电话","label":"打电话","length":"","type":"square","x":-0.06666666666666667,"y":0,"icon":{"font":"FontAwesome","scale":1,"color":"#fff","content":""},"size":1,"read_cam0:size":20,"read_cam0:x":-203.3011655552927,"read_cam0:y":-193.14387080014282,"renderer1:x":470.4699026145337,"renderer1:y":94.26831129403362,"renderer1:size":15.339299776947408,"color":"#19aa8d"},{"active":true,"data":{"quality":"phone","quantity":1},"id":"3006","infoType":"打电话","label":"打电话","length":"","type":"square","x":0.06666666666666667,"y":0,"icon":{"font":"FontAwesome","scale":1,"color":"#fff","content":""},"size":1,"read_cam0:size":20,"read_cam0:x":-150.0011736836964,"read_cam0:y":-193.14387080014282,"renderer1:x":501.8228390095903,"renderer1:y":94.26831129403362,"renderer1:size":15.339299776947408,"color":"#19aa8d"}],"edges":[{"id":"EventConnectionIdNo90001776","isMerged":null,"label":"phone","rawData":null,"source":"Q1147586","target":"3002","type":"arrow","size":1,"read_cam0:size":1,"renderer1:size":0.7669649888473704,"active":false},{"id":"EventConnectionIdNo80001776","isMerged":null,"label":"phone","rawData":null,"source":"Q12588424","target":"3002","type":"arrow","size":1,"read_cam0:size":1,"renderer1:size":0.7669649888473704,"active":false},{"id":"EventConnectionIdNo90001777","isMerged":null,"label":"phone","rawData":null,"source":"Q95404","target":"3006","type":"arrow","size":1,"read_cam0:size":1,"renderer1:size":0.7669649888473704,"active":false},{"id":"EventConnectionIdNo80001777","isMerged":null,"label":"phone","rawData":null,"source":"Q26209004","target":"3006","type":"arrow","size":1,"read_cam0:size":1,"renderer1:size":0.7669649888473704,"active":false}]},"type":"ENTITY","mergedEdges":[]}
+
+
+
+Crwqdo KWIVCLG
+HusamalDin
+Abd al¡‘jabbar 发表了一篇帖子 Héros nationaliste d 被转载了200多次
+	
+前端：
+1. 文档显示的还是属性，不是正文
+
+2. 新建画布后，要清空时间轴和柱状统计
+
+3. "相关时间" 没有值
+
+4. 联合搜索统计值显示问题
+
+
+后端：
+1. search around 和预期不符合
+done
+2. facebook_doc不在本体配置里
+估计es mapping 出问题了 ontology_type, 已解决。
+前端问题
+
+3. 工作区没有支持用户id?
+bug
+
+4. 工作区保存
+
+2017-07-21 13:24:41.108 [http-nio-8080-exec-10] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Data truncation: Data too long for column 'edge_id' at row 1
+MergedKeyId6user34dd7b32ed2eee51a86dfb9bb5611038&6doc6512bd43d9caa6e02c990b0a82652dca
+
+打包脚本
+
+7-22
+--------
+后端
+
+1. searcharound 返回新节点无高亮
+
+2. searcharound 从文档扩事件有问题
+
+
+前端
+
+1. 前端label 传的是省略的文档名称给后端 "Husam..."
+
+2. 文档内容没有值
+
+3. 事件展开后的删除问题
+
+
 
 
 

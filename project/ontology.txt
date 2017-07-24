@@ -23,3 +23,13 @@ panlantires schema
    
    add data source to each object/record
    xml is used hold the rich data structure
+
+metadata/system fields
+   last_modified
+   created_by
+   time_created
+Revisioning fields
+    id£º component id: propertiy id
+	object_id: which object this property belongs to
+	version: id + update time
+	

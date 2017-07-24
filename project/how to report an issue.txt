@@ -1,0 +1,18 @@
+Environment:
+
+Version of VirtualBox installed (e.g. 4.2.2)
+Type and version of the Host Operating System (e.g. openSUSE 12.1, Windows 7 SP1, etc.)
+Type and version of the Guest OS
+Problem:
+
+What are you trying to accomplish
+What did you expect and what was the result?
+Attempted Resolutions:
+
+Have you searched the User Manual?
+What have you attempted and what was the result of each attempt?
+Log files: If you are reporting a problem on the bug tracker or in the forums (please do not post log files to a mailing list unless you are asked to!) you should provide any relevant log files.
+
+If you were able to start a virtual machine at all, please provide the most relevant log file from a machine which you ran, as it contains lots of useful information!
+If you had an installation problem, please provide any installation log files (different systems have them in different places).
+If your problem is about graphics in a Linux or Solaris guest, please include a relevant X server log.
