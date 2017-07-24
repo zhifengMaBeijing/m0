@@ -1,6 +1,8 @@
 
 本体对象模型位于物理存储和用户之间，动态本体对象建模是系统的核心。
 
+图的建模：
+尽量少的属性，其他字段可以从ES取得。
 
 1.建模
 
@@ -32,4 +34,6 @@ Revisioning fields
     id： component id: propertiy id
 	object_id: which object this property belongs to
 	version: id + update time
+	
+	
 	

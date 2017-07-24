@@ -89,6 +89,26 @@ isKey: 标记该属性是否是主键
 es model change
    index or type?
 
+   
+7-21
+-----------------
+
+tag branch 1.0.0.buildno
+    
+version control practice
+
+optimise search around
+    todo
+
+
+
+
+
+
+
+
+
+ 
 
 如何自制？
 
