@@ -2,6 +2,10 @@ http://neo4j.com/docs/developer-manual/current/extending-neo4j/cypher-functions/
 
 graph database declarative & query language
 
+Pattern matching borrows expression from SPARQL
+Keywords are inspired by SQL
+list semantic are borrowed from haskell and python.
+
 
 战法 描述语言
 侧重点在获取什么，而不是怎么获得

@@ -1,6 +1,3 @@
-http://blog.didispace.com/spring-boot-actuator-1/
-
-
 neo4j clients
 
 https://neo4j.com/developer/the-example-project-8/
