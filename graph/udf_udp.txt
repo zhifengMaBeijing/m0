@@ -17,3 +17,8 @@ where
 return
 
 
+
+
+Is Data Warehousing and Mining is possible with Neo4j Graph Database?
+https://www.hakkalabs.co/articles/graph-all-the-things-with-neo4j-and-node/
+https://dzone.com/articles/java-networkgraphdata-mining-0
