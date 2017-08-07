@@ -39,7 +39,7 @@ https://spring.io/guides/gs/consuming-rest/
 
 what's the need?
 
-
+https://www.compose.com/articles/geofile-elasticsearch-geo-queries-2/
 
 store geo shape in an es index
 https://www.elastic.co/guide/en/elasticsearch/reference/5.0/query-dsl-geo-shape-query.html
