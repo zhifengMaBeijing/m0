@@ -1,0 +1,21 @@
+{
+    "atom": {
+        "settings": {
+            "index": {
+                "mapping": {
+                    "nested_fields": {
+                        "limit": "100000"
+                    }
+                },
+                "number_of_shards": "5",
+                "provided_name": "atom",
+                "creation_date": "1500117185285",
+                "number_of_replicas": "1",
+                "uuid": "WW75VBrXTTa86ZTUllP4Mw",
+                "version": {
+                    "created": "5020299"
+                }
+            }
+        }
+    }
+}

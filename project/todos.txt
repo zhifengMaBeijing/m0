@@ -214,6 +214,21 @@ QA
   
 
 
+7-29
+----------
+1. release
+  postpone to next monday
+  
+2. demo
+ontology prepare
+  zhennan
 
+geo interface
+
+// all, 我把 34 和 88 的 后端配置提交到git 上了，分别是 resources\application-dev.yml和   resources\application-test.yml
+
+
+backend: enhancement
+add node
 
 

@@ -1,0 +1,53 @@
+$match p=((a) -[r]->(b)) return p limit 20
+
+match p=((a) -[r*]-(b)) return p limit 20
+
+相关人物：
+
+Crwqdo KWIVCLG
+
+HusamalDin
+相关事件 1， 相关文档 1
+
+Islamiste est la seu
+
+实体 - 实体 （ok）
+
+实体 - 事件  (fail)
+如果事件还关联实体和文档，则带出实体和文档。
+
+否则只带出事件
+
+实体 - 事件 - 实体
+
+MATCH (a {type: 'facebook_user',node_id:'6userad246a293bfd2f319f1a8b73e64903e3'})-[r1]-(n:event)-[r2]-(b:entity) RETURN a,r1,n,r2,b,startNode(r1),endNode(r1),startNode(r2),endNode(r2),labels(startNode(r1)) as firstStartLabel,labels(endNode(r1)) as firstEndLabel,labels(startNode(r2)) as secondStartLabel,labels(endNode(r2)) as secondEndLabel
+
+
+实体 - 事件 - 文档 (ok)
+MATCH (a {type: 'facebook_user',node_id:'6userad246a293bfd2f319f1a8b73e64903e3'})-[r1]-(n:event)-[r2]-(b:document) RETURN a,r1,n,r2,b,startNode(r1),endNode(r1),startNode(r2),endNode(r2),labels(startNode(r1)) as firstStartLabel,labels(endNode(r1)) as firstEndLabel,labels(startNode(r2)) as secondStartLabel,labels(endNode(r2)) as secondEndLabel
+
+
+文档 - 文档
+MATCH (a {type: 'facebook_doc',node_id:'6doc7e9da216f3bfda8c024b94938291ebec'})-[r]-(n:document) RETURN a,r,n,type(r),startNode(r),endNode(r),labels(startNode(r)) as startLabel,labels(endNode(r)) as endLabel,labels(n) as entityNodeType
+
+
+文档 - 事件  （ok） 但是没有带出实体（一度？）
+MATCH (a {type: 'facebook_user',node_id:'6user34dd7b32ed2eee51a86dfb9bb5611038'})-[r1]-(n:event)-[r2]-(b:entity) RETURN a,r1,n,r2,b,startNode(r1),endNode(r1),startNode(r2),endNode(r2),labels(startNode(r1)) as firstStartLabel,labels(endNode(r1)) as firstEndLabel,labels(startNode(r2)) as secondStartLabel,labels(endNode(r2)) as secondEndLabel
+
+文档 - 事件 - 实体 (ok)
+
+# 联合搜索
+## 1度
+MATCH (a {type: '人类',node_id:'Q244616'})-[r]-(n) RETURN a,r,n,type(r) as relationType,startNode(r),endNode(r),labels(startNode(r)) as startLabel,labels(endNode(r)) as endLabel,labels(n) as entityNodeType  
+
+## 2度
+
+MATCH (a {type: '人类',node_id:'Q244616'})-[r1]-(n:event)-[r2]-(b:document) RETURN a,r1,n,r2,b,startNode(r1),endNode(r1),startNode(r2),endNode(r2),labels(startNode(r1)) as firstStartLabel,labels(endNode(r1)) as firstEndLabel,labels(startNode(r2)) as secondStartLabel,labels(endNode(r2)) as secondEndLabel  
+
+## bug fix
+
+"time" -> workaround (在图节点中添加该属性，历史遗留问题，坑啊）
+文档 -> 实体 （历史问题，坑啊）
+
+
+

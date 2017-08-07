@@ -1,10 +1,13 @@
 https://www.elastic.co/blog/geo-location-and-search
 
 https://github.com/elastic/elasticsearch/issues/278
+
 https://github.com/elastic/elasticsearch/issues/279
+
 https://github.com/elastic/elasticsearch/issues/290
 
-
+老A:
+纬度 lat:14-36; 经度 lng:0-10;
 
 issues:
 
@@ -24,13 +27,20 @@ https://www.socialbakers.com/suite?utm_source=google&utm_medium=cpc&utm_term=%2B
 
 sample:
 一个是用户注册地址，一个是事件发生地址
+
 user: user_loc Baghdad Iraq
 event：Location  Damascus,Syrian
 https://maps.googleapis.com/maps/api/geocode/json?address=Damascus,+Syrian
 
-
 https://maps.googleapis.com/maps/api/geocode/json?address=Damascus,+Syrian&key=YOUR_API_KEY
 
-
 https://spring.io/guides/gs/consuming-rest/
+
+数据量 ：每天百万条。
+
+需要考虑换库了/或分库
+
+todo: MGRS?
+
+
 
