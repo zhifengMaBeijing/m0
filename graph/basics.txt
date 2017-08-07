@@ -1,0 +1,66 @@
+http://neo4j.com/docs/developer-manual/current/extending-neo4j/cypher-functions/
+
+https://gist.github.com/nicolewhite/cc178bf2a761d7ac3a20
+
+graph database declarative & query language
+
+Pattern matching borrows expression from SPARQL
+Keywords are inspired by SQL
+list semantic are borrowed from haskell and python.
+
+
+战法 描述语言
+侧重点在获取什么，而不是怎么获得
+
+match
+
+where
+
+return
+
+
+Is Data Warehousing and Mining is possible with Neo4j Graph Database?
+https://www.hakkalabs.co/articles/graph-all-the-things-with-neo4j-and-node/
+https://dzone.com/articles/java-networkgraphdata-mining-0
+
+create (:Person {name:"ann"}) -[:loves]-> (:Person {name: "dan"}
+
+
+# 战法的语义描述与配置
+我们不会开发一门新的语言。
+可以将配置转化为cypher。配置可以参考cypher的部分定义，但要尽量和业务相关，而不是和语言相关。
+可以支持直接配置cypher，如果提供cypher，则优先使用cypher。
+
+我们有各种复杂的问题，系统可以通过步进方式回答。也可以通过一次回答（技术难度大很多）
+
+```
+给边添加一个重复区间， 默认为1
+match (a:Person) -[*0..9]-> (b) return a, b
+
+如何定义merge 逻辑？ （业务层同一规定？）
+
+如何支持 with？
+
+metadata: lang: cypher | func
+
+order by
+
+post processing could not be defined easily?
+
+layout: enable, disable
+
+```
+
+# 战法的基类抽象
+算法工厂
+
+SNA
+传播路径
+同行同住
+
+
+
+# 合并与拆分的两种方案？
+
+# 基于某次commit 打tag?
+

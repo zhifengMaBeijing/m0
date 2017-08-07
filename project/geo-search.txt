@@ -36,6 +36,7 @@ https://maps.googleapis.com/maps/api/geocode/json?address=Damascus,+Syrian&key=Y
 
 https://spring.io/guides/gs/consuming-rest/
 
+<<<<<<< HEAD
 数据量 ：每天百万条。
 
 需要考虑换库了/或分库
@@ -44,3 +45,44 @@ todo: MGRS?
 
 
 
+=======
+
+# geo search design and task break down
+
+what's the need?
+
+https://www.compose.com/articles/geofile-elasticsearch-geo-queries-2/
+
+store geo shape in an es index
+https://www.elastic.co/guide/en/elasticsearch/reference/5.0/query-dsl-geo-shape-query.html
+ignore_unmapped is useful for multi-index search. if field mapping are different across index
+
+{
+    "properties": {
+        "location": {
+            "type": "geo_shape",
+            "tree": "quadtree",
+            "precision": "1m"  //precision
+        }
+    }
+}
+
+if there are more than 10k records, should we return all to the caller? talk with da long. two steps query, first query get the total number and top hits.
+
+page, from
+
+https://www.elastic.co/guide/en/elasticsearch/reference/5.0/geo-point.html
+
+PUT my_index
+{
+  "mappings": {
+    "my_type": {
+      "properties": {
+        "location": {
+          "type": "geo_point"
+        }
+      }
+    }
+  }
+}
+>>>>>>> f2c855f49421c35b56007937f5992ebb5fc6511f
