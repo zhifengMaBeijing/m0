@@ -1,0 +1,76 @@
+curl -s -XPUT "http://localhost:9200/twitter" -d '
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "twittsTokenizor" : {
+            "type" : "custom",
+            "tokenizer" : "standard",
+            "filter" : [
+                "french_elision",
+                "asciifolding",
+                "lowercase",
+                "french_stop",
+                "english_stop",
+                "twitter_stop"
+            ]
+        }
+      },
+      "filter" : {
+        "french_elision" : {
+          "type" : "elision",
+          "articles" : [ "l", "m", "t", "qu", "n", "s",
+                          "j", "d", "c", "jusqu", "quoiqu",
+                          "lorsqu", "puisqu"
+                        ]
+        },
+        "asciifolding" : {
+            "type" : "asciifolding"
+        },
+        "french_stop": {
+            "type":       "stop",
+            "stopwords":  "_french_" 
+        },
+        "english_stop": {
+            "type":       "stop",
+            "stopwords":  "_english_" 
+        },
+        "twitter_stop" : {
+            "type" : "stop",
+            "stopwords": ["RT", "FAV", "TT", "FF", "rt"]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "twitter": {
+      "properties": {
+        "id": {
+          "type": "long",
+          "store": true
+        },
+        "text": {
+          "type": "string",
+          "store": true,
+          "analyzer" : "twittsTokenizor"
+        },
+        "created_at": {
+          "type": "date",
+          "format": "EE MMM d HH:mm:ss Z yyyy",
+          "store": true
+        },
+        "location": {
+          "type": "string",
+          "store": true
+        },
+        "geo": {
+          "type": "geo_point",
+          "store": true
+        }
+      }
+    }
+  }
+}'
+
+
+{ "_id" : ObjectId("54eb3c35a710901a698b4567"), "country" : "FR", "created_at" : "Mon Feb 23 14:25:30 +0000 2015", "geo" : { "lat" : 49.119696, "lon" : 6.176355 }, "id" : -812216320, "location" : "Metz ", "text" : "Passer des vacances formidable avec des gens g¨¦niaux sans aucunes pression avec pour seul soucis s'¨¦clater et se laisser vivre #BONHEUR"}

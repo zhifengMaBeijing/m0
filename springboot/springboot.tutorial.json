@@ -1,14 +1,4 @@
-
-0. spring?
-
--application framework
-  huge framework,  solve common business problem, no need repeat for every application.
--program and configuration model
-  multiple step config
--infrastructure support
-
-
-1.  Learn Spring Boot (MVC) in 50 Minutes
+# Learn Spring Boot (MVC) in 50 Minutes
 
 	
    actuator
@@ -23,41 +13,7 @@ overview of spring architecture?
 JPA: java persistence API
 map relation database to object, operate on object.
 
-In this tutorial I show how to build a N tier architecture application featuring 3 layers where : 
-
-Layer 1 - Controller for handling https request REST API. (GET, POST, PUT, DELETE).
-
-Layer 2 - Service for business logic.
-
-Layer 3 - Data access for retrieving data from a database of your choice.
-
-I show how to use Spring dependency injection using @Autowired and @Qualifier.
-
-In this tutorial I show how to implement to an interface to enable you develop loosely coupled system that changes to your code require just one line of code to change the behaviour of your application. (DAO Pattern).
-
-Finally I show how easy it is to run your application from a jar file where this can be deployed to you favourite application server.
-
-If you are a Java developer or learning Java this is one the frameworks that you need to familiarize with. It is super awesome.
-
-Source Code available at : https://github.com/djdjalas/SpringBootIn50
-
-Follow me on my blog:
-https://medium.com/@iamdjalas/if-you-...
-
-Enjoy ? Part 2 Now Available at: https://www.youtube.com/watch?v=ZA9WpK-lxXM&t=3192s
-
-Useful links:
-Building an Application with Spring Boot - https://spring.io/guides/gs/spring-boot/
-
-Spring Boot Reference Guide - http://docs.spring.io/spring-boot/doc...
-
-Spring Framework Reference Documentation - http://docs.spring.io/spring/docs/cur...
-
-Please don't forget to subscribe.
-
-
-
-2. caching with spring: advaced topics and best practice
+# caching with spring: advaced topics and best practice
 https://www.youtube.com/watch?v=3NLS7147UQo
 what to cache?  cache read operations
 where to cache? different layer (database itself, access layer, business layer, http cache)
@@ -70,7 +26,7 @@ Spring tutorial 2
 
 
 
-3 with mysql
+# with mysql
 
 https://springframework.guru/configuring-spring-boot-for-mysql/
 it mentioned h2 is configured by spring boot by default.
@@ -85,13 +41,45 @@ the following example could be used to refactor neo4j JDBC api
 http://www.tutorialspoint.com/spring/spring_jdbc_example.htm
 
 
-4. spring mvc
+# spring mvc
 https://www.youtube.com/watch?v=iCQspqBpOB0
+-application framework
+  huge framework,  solve common business problem, no need repeat for every application.
+-program and configuration model
+  multiple step config
+-infrastructure support
 
 
-IoC
-AOP
+## IoC
 
-  
-5. teamtreehourse.com
-  
+## AOP
+what?
+https://www.youtube.com/watch?v=WK2qbVqEeKk
+
+separate service (web-logic, or other provider webspum?) from business logic
+https://www.youtube.com/watch?v=JbDmpsCqGRg
+* Aspect  - service
+
+* Advice - service provider  
+按照执行时间分类。按照业务功能分类
+```
+before - security check, loggin
+
+after - send email
+
+around - transaction, logging
+
+after throwing - cleanup, send email, send jms
+
+```
+
+* point cut - a poit to execute
+
+* adviser - advice + point cut 
+
+```
+some method does not require aop, some method require aop, we need filter in function
+```
+
+# teamtreehourse.com
+
