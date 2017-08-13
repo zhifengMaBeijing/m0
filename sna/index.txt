@@ -1,0 +1,24 @@
+# 全新解读Twitter、Facebook和LinkedIn业务模型与架构
+http://dbaplus.cn/news-21-455-1.html
+
+https://neo4j.com/news/graphing-network-data-in-excel/
+
+
+# export graph from neo4j as csv, analysis with spark graphx.
+
+https://github.com/kbastani/neo4j-mazerunner
+https://spark.apache.org/graphx/
+
+https://github.com/besil/Neo4jSNA
+
+
+# social network 
+
+https://github.com/neo4j-examples/graphgists/blob/master/social/finding_influencers.adoc
+
+friends
+recommendation
+influencer	
+
+https://neo4j.com/graphgist/637bb6a8-d27d-48f6-a456-066b47c229af
+
