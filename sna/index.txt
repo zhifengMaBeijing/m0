@@ -21,4 +21,12 @@ recommendation
 influencer	
 
 https://neo4j.com/graphgist/637bb6a8-d27d-48f6-a456-066b47c229af
+LIKE：用户可以喜欢（点赞）某篇帖子
+@：某用户的消息中可能提及某些人
 
+# facebook on neo4j
+
+https://www.slideshare.net/maxdemarzi/facebook-graph-search-with-cypher-and-neo4j
+
+# neo4j samples
+http://neo4j.com/docs/stable/cypher-cookbook-clustering-coefficient.html

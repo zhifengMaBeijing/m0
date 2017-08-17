@@ -1,0 +1,45 @@
+1. 数据总结
+1.1 es 的文档数量/size
+1.2 neo4j 节点数，边的数量，磁盘空间
+
+1.3 实际流量
+kafka 中保存10天数据，两个主题。
+
+skynet-social-twitter-status平局一天增量是14,998,050条消息，
+skynet-public-content-v1平均一天增量是695,847条消息。
+
+face book 未知
+
+站点
+
+2. 数据应用
+高考
+阿拉伯之春： 国家安全
+
+3. Facebook API
+
+https://developers.facebook.com/tools/explorer?method=GET&path=110595066329922%2Ffriendlists&version=v2.10
+1871048859786522?fields=admins
+
+Have you tried out the various examples available in the api wiki?
+
+http://code.google.com/p/facebook-java-api/wiki/Examples
+
+Google also returns various tutorial pages:
+
+http://programmaremobile.blogspot.com/2009/01/facebook-java-apieng.html
+
+http://www.socialjava.com/socialjavastepbystep.html
+
+You should try working through some of these and posting specific questions about problems you run into.
+
+
+
+FB.api(
+  '/1871048859786522/members',
+  'GET',
+  {"pretty":"0","limit":"25","after":"QVFIUlAyY19XMEVSdzJVS0pjVU1vSzAtR2RZAQUtSVm5VR2RkdnJoZADRtX084T2NLYldmcGs2WmVQQW1FTnB5eTBkRU9kVEc3emZAnYTVyRzR2aS1oUmo0ZAS1B"},
+  function(response) {
+      // Insert your code here
+  }
+);

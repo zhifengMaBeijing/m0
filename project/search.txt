@@ -1,3 +1,93 @@
+# atom_demo (高考数据）
+
+# es 监控
+http://172.24.8.80:9200/_cat/indices/atom?v
+
+health status index                         uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+green  open   atom                          dWwzAGMFSYy1IKIqopLDag   5   1   16546944       223503     54.4gb           27gb
+
+http://172.24.8.80:9200/_cat/health?v
+
+···
+查询词频
+有关使用ES对中文文章进行分词，并进行词频统计排序
+http://heqin.blog.51cto.com/8931355/1889671
+会建个新的索引，每次用户的搜索信息都放到这个索引里，然后对此索引进行termvector
+
+
+···
+{  
+    "size" : 0,
+    "aggs" : {   
+        "messages" : {  
+            "terms" : {   
+                 "size" : 1000,
+                 "field" : "doc_content.keyword"
+            }  
+        }  
+    },
+   "highlight": {
+     "fields": {
+      "message": {}
+    }
+  }
+}
+
+
+{  
+    "size" : 0,
+    "aggs" : {   
+        "messages" : {  
+            "top-terms-aggregation" : {   
+                 "size" : 1000,
+                 "field" : "doc_content.keyword"
+            }  
+        }  
+    }
+}
+
+
+# test analyze
+
+post index/_analyze
+{
+  "analyzer": "ik", 
+  "text":     "Is this déjà vu?"
+}
+
+
+#  atom settings
+{
+    "atom": {
+        "settings": {
+            "index": {
+                "mapping": {
+                    "nested_fields": {
+                        "limit": "100000"
+                    }
+                },
+                "number_of_shards": "5",
+                "provided_name": "atom",
+                "creation_date": "1502466119358",
+                "analysis": {
+                    "analyzer": {
+                        "ik": {
+                            "tokenizer": "ik_smart"
+                        }
+                    }
+                },
+                "number_of_replicas": "1",
+                "uuid": "dWwzAGMFSYy1IKIqopLDag",
+                "version": {v
+                    "created": "5020299"
+                }
+            }
+        }
+    }
+}
+
+
+
 1. 模糊
 
 

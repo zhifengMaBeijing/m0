@@ -36,7 +36,6 @@ https://maps.googleapis.com/maps/api/geocode/json?address=Damascus,+Syrian&key=Y
 
 https://spring.io/guides/gs/consuming-rest/
 
-<<<<<<< HEAD
 数据量 ：每天百万条。
 
 需要考虑换库了/或分库
@@ -45,11 +44,11 @@ todo: MGRS?
 
 
 
-=======
-
 # geo search design and task break down
 
 what's the need?
+
+http://geojson.org/
 
 https://www.compose.com/articles/geofile-elasticsearch-geo-queries-2/
 
@@ -85,4 +84,3 @@ PUT my_index
     }
   }
 }
->>>>>>> f2c855f49421c35b56007937f5992ebb5fc6511f

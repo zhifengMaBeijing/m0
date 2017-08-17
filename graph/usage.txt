@@ -86,3 +86,7 @@ DETACH DELETE n
 
 #monitoring
 :play sysinfo
+
+
+## IN
+match (a)-[r]->(b) where b.node_id in ['6eventfe73f687e5bc5280214e0486b273a5f9','6eventfea834beaf89cb0b8e3dcc21773bdab8']  return a,r,b limit 3
