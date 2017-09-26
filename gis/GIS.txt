@@ -1,0 +1,47 @@
+1、Open layers api 简介
+它是用于Web GIS 的客户端JavaScript程序包。
+BSD　licence.
+
+访问地理空间数据服务器(GEO server)的方法符合行业标准 如open GIS的WMS和WFS规范。采用operLayers作为客户端不存在浏览器的依赖
+支持不同的地图数据资源，如WMS、WFS、GoogleMap、KaMap、MSVirtualEarth、WorldWind等等
+
+
+2、与goop maps api 的对比
+
+Open layers API和Google Maps API有哪些主要不同点？
+二者的强项和弱项？
+是么情况下应该用Open Layers API?什么情况下应该用Google Maps API?
+
+open layers api需要更多的开发时间。你要了解数据，你和geoserver通信获取数据，调用api渲染。
+o 不和任何geo server 绑定
+
+
+https://gis.stackexchange.com/questions/4585/technical-and-usability-differences-between-openlayers-and-google-maps-api-v3
+GeoServer，ugage restriction, open source, stable, nice, easier, 
+
+
+
+There are problems with Google's license. 
+IANAL but I understand that displaying data on Google Maps 
+gives Google an unlimited license to copy, modify, transform, and redistribute your data.
+
+
+3、open layers API 框架分析
+http://voole.iteye.com/blog/1165565
+GIS核心是什么？服务
+空间数据的特征、表达方式
+地理数据的模型 （结构）
+
+
+4、API实现机制分析
+
+
+
+5、我们的需求是什么？
+说这么多，我们要什么是关键？
+5.1、现在实现了什么？
+5.2、下一步的计划？
+
+## site for futher reference
+
+GIS.SE
